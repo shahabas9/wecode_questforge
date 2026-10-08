@@ -1,1 +1,1 @@
-its 
+Quest Forge is a hands-on learning project for exploring object-oriented programming (OOP) and design patterns through building a game. As we create and expand the game, we’ll practice applying core concepts such as encapsulation, inheritance, and polymorphism, while using design patterns to keep your code organized and adaptable.
