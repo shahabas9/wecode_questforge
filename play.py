@@ -1,6 +1,6 @@
 from domain.character import Character
-from domain.classes import Warrior, Mage,Cleric
-
+from domain.classes import Warrior, Mage,Cleric, Rogue
+from domain.battle import run_special_round, total_party_damage
 
 
 
@@ -15,10 +15,12 @@ if __name__=="__main__":
 
     warrior = Warrior("Bram")
     mage = Mage("Sylla")
+    rogue = Rogue("Kade")
     sage = Cleric("Eldrin")
 
 
-    mage.special_ability(goblin)
-    print(f"Bram HP: {warrior.health}, Sylla HP: {mage.health}")
-    sage.special_ability(goblin)
-    print(f"Goblin HP: {goblin.health}, Eldrin HP: {sage.health}")
+    party = [Warrior("Bram"), Mage("Sylla"), Rogue("Kade"), Cleric("Eldrin")]
+    dummy = Warrior("Training Dummy")
+
+    total_party_damage(party, dummy)
+    print(f"Dummy HP: {dummy.health}\n")

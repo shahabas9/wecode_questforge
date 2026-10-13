@@ -45,6 +45,6 @@ class Cleric(Character):
 
     def special_ability(self, target: Character) -> None:
         heal_amount = 50
-        if target.health < 15:
+        if target.health < 45:
             target.heal(heal_amount)
             print(f"{self.name} casts Heal! {target.name} recovers {heal_amount} HP")
